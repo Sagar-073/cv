@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DOM_events</title>
+</head>
+<body>
+    <h2>JS events</h2>
+    Enter your name: <input type="text" id="fname" onchange="upperCase()">
+    <p>Welcome tp js events page</p>
+    <script>
+        function upperCase()
+        {
+            const x=document.getElementById("fname");
+            x.value=x.value.toUpperCase();
+        }
+    </script>
+    <div onmouseover="mOver(this)" onmouseout="Mout(this)" style="background-color: blue;width: 120px;height: 20px;padding: 10px;">
+    Mouse over me
+    </div>
+    <script>
+        function mOver(obj)
+        {
+
+            obj.innerHTML="thank You";
+            obj.style.backgroundColor="green";
+        }
+        function Mout(obj)
+        {
+            obj.innerHTML="touch me";
+            obj.style.backgroundColor="pink   ";
+        }
+
+    </script>
+    
+</body>
+</html>

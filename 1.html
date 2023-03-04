@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<script type="JavaScript" src="1.js"></script>
+<body>
+    <div id="demo">
+        <h2>this is heading of the</h2>
+    </div>
+    <div id="de">
+        <p class="para">para1</p>
+        <p class="para">para2</p>
+        <p class="mass">hi my </p>
+    </div>
+    <script>
+        // var ele=document.getElementById("demo");
+        // ele.innerHTML="Hello world";
+       // var arr=document.getElementsByClassName("para");
+        //arr[2].innerHTML="Hi";
+        // var ar=document.getElementsByTagName("p");
+        // for(var x=0;x<ar.length;x++)
+        // {
+            // ar[x].innerHTML="Sagar Bhukya";
+        // }
+        var a= document.getElementById("de")
+        var ary=a.childNodes;
+        for(var i=0;i<ary.length;i++)
+        {
+            ary[i].innerHTML="new childNodes";
+        }
+    </script>
+    
+</body>
+</html>
